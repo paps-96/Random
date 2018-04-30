@@ -6,6 +6,10 @@ main = do
 ----Use command split to split lines into values after every ","
    let linesOfFlie =map (map (filter (/=' '))) (map split (lines file))
    print linesOfFlie
+   
+--We are printing a list of lists
+   --Each inner list is the line
+   --Each element of an inner list is the element of that specific line
 
 
 split :: String -> [String]
